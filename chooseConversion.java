@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 public class chooseConversion {
-    public void conversionSelector (String userChoice, double userUSD, String question){
+    public void conversionSelector (Scanner input, int userChoice, double userUSD, String question){
         runConversion f = new runConversion();
-        Scanner input = new Scanner(System.in);
 
-        while (userChoice != "q"){
+        while (userChoice != 12){
             switch(userChoice){
-                case "Most Popular Conversions":
+                case 1:
                     f.dollarToEuro(userUSD);
                     f.dollarToYen(userUSD);
                     f.dollarToCanadian(userUSD);
@@ -18,36 +17,36 @@ public class chooseConversion {
                     f.dollarToKrona(userUSD);
                     f.dollarToNZD(userUSD);
                     break;
-                case "Euro":
-                    f.dollarToEuro(userUSD);
-                    break;
-                case "Japanese Yen":
-                    f.dollarToYen(userUSD);
-                case "Indonesian Rupiah":
+                case 2:
                     f.dollarToRupiah(userUSD);
                     break;
-                case "Canadian Dollar":
-                    f.dollarToCanadian(userUSD);
-                    break;
-                case "Australian Dollar":
+                case 3:
                     f.dollarToAustralian(userUSD);
                     break;
-                case "Pound Sterling":
-                    f.dollarToPound(userUSD);
+                case 4:
+                    f.dollarToCanadian(userUSD);
                     break;
-                case "Swiss Franc":
-                    f.dollarToFranc(userUSD);
-                    break;
-                case "Chinese Renminbi":
+                case 5:
                     f.dollarToRenminbi(userUSD);
                     break;
-                case "Swedish Krona":
+                case 6:
+                    f.dollarToEuro(userUSD);
+                    break;
+                case 7:
+                    f.dollarToYen(userUSD);
+                case 8:
+                    f.dollarToPound(userUSD);
+                    break;
+                case 9:
+                    f.dollarToFranc(userUSD);
+                    break;
+                case 10:
                     f.dollarToKrona(userUSD);
                     break;
-                case "New Zealand Dollar":
+                case 11:
                     f.dollarToNZD(userUSD);
                     break;
-                case "q":
+                case 12:
                     System.out.println("Goodbye!");
                     input.close();
                     System.exit(0);
@@ -56,11 +55,10 @@ public class chooseConversion {
                     System.out.println("Options should be entered in title case format (i.e. Japanese Yen) ");
                     break;
             }
-            if (userChoice != "q"){
+            if (userChoice != 12){
                 System.out.print(question);
-                userChoice = input.nextLine();
-                if (userChoice == "q"){
-                    input.close();
+                userChoice = input.nextInt();
+                if (userChoice == 12){
                     System.exit(0);
                 }
             }
