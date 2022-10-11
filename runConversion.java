@@ -1,6 +1,17 @@
 public class runConversion {
+    private double IDR = 15303.70;
+    private double CAD = 1.38;
+    private double EURO = 1.02;
+    private double YEN = 144.74;
+    private double AUD = 1.56;
+    private double GBP = 0.90;
+    private double FRANC = 0.99;
+    private double CNY = 7.12;
+    private double SEK = 11.08;
+    private double NZD = 1.79;
+
     public void dollarToRupiah(double input) {
-        double IDR = input * 15303.70;
+        IDR = input * 15303.70;
         System.out.println("US Dollar to Rupiah Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -10,7 +21,7 @@ public class runConversion {
     }
 
     public void dollarToCanadian(double input){
-        double CAD = input * 1.38;
+        CAD = input * 1.38;
         System.out.println("US Dollar to Canadian Dollar Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -20,7 +31,7 @@ public class runConversion {
     }
 
     public void dollarToEuro(double input){
-        double EURO = input * 1.02;
+        EURO = input * 1.02;
         System.out.println("US Dollar to Euro Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -30,7 +41,7 @@ public class runConversion {
     }
 
     public void dollarToYen(double input){
-        double YEN = input * 144.74;
+        YEN = input * 144.74;
         System.out.println("US Dollar to Japanese Yen Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -40,7 +51,7 @@ public class runConversion {
     }
 
     public void dollarToAustralian(double input){
-        double AUD = input * 1.56;
+        AUD = input * 1.56;
         System.out.println("US Dollar to Australian Dollar Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -50,7 +61,7 @@ public class runConversion {
     }
 
     public void dollarToPound(double input){
-        double GBP = input * 0.90;
+        GBP = input * 0.90;
         System.out.println("US Dollar to Pound Sterling Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -60,7 +71,7 @@ public class runConversion {
     }
 
     public void dollarToFranc(double input){
-        double FRANC = input * 0.99;
+        FRANC = input * 0.99;
         System.out.println("US Dollar to Swiss Franc Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -70,7 +81,7 @@ public class runConversion {
     }
 
     public void dollarToRenminbi(double input){
-        double CNY = input * 7.12;
+        CNY = input * 7.12;
         System.out.println("US Dollar to Chinese Renminbi Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -80,7 +91,7 @@ public class runConversion {
     }
 
     public void dollarToKrona(double input){
-        double SEK = input * 11.08;
+        SEK = input * 11.08;
         System.out.println("US Dollar to Swedish Krona Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);
@@ -90,7 +101,7 @@ public class runConversion {
     }
 
     public void dollarToNZD(double input){
-        double NZD = input * 1.79;
+        NZD = input * 1.79;
         System.out.println("US Dollar to New Zealand Dollar Conversion");
         System.out.print("  ");
         System.out.printf("%.2f", input);

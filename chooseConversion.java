@@ -2,49 +2,49 @@ import java.util.Scanner;
 
 public class chooseConversion {
     public void conversionSelector (Scanner input, int userChoice, double userUSD, String question){
-        runConversion f = new runConversion();
+        runConversion runConversion = new runConversion();
 
         while (userChoice != 12){
             switch(userChoice){
                 case 1:
-                    f.dollarToEuro(userUSD);
-                    f.dollarToYen(userUSD);
-                    f.dollarToCanadian(userUSD);
-                    f.dollarToAustralian(userUSD);
-                    f.dollarToPound(userUSD);
-                    f.dollarToFranc(userUSD);
-                    f.dollarToRenminbi(userUSD);
-                    f.dollarToKrona(userUSD);
-                    f.dollarToNZD(userUSD);
+                    runConversion.dollarToEuro(userUSD);
+                    runConversion.dollarToYen(userUSD);
+                    runConversion.dollarToCanadian(userUSD);
+                    runConversion.dollarToAustralian(userUSD);
+                    runConversion.dollarToPound(userUSD);
+                    runConversion.dollarToFranc(userUSD);
+                    runConversion.dollarToRenminbi(userUSD);
+                    runConversion.dollarToKrona(userUSD);
+                    runConversion.dollarToNZD(userUSD);
                     break;
                 case 2:
-                    f.dollarToRupiah(userUSD);
+                    runConversion.dollarToRupiah(userUSD);
                     break;
                 case 3:
-                    f.dollarToAustralian(userUSD);
+                    runConversion.dollarToAustralian(userUSD);
                     break;
                 case 4:
-                    f.dollarToCanadian(userUSD);
+                    runConversion.dollarToCanadian(userUSD);
                     break;
                 case 5:
-                    f.dollarToRenminbi(userUSD);
+                    runConversion.dollarToRenminbi(userUSD);
                     break;
                 case 6:
-                    f.dollarToEuro(userUSD);
+                    runConversion.dollarToEuro(userUSD);
                     break;
                 case 7:
-                    f.dollarToYen(userUSD);
+                    runConversion.dollarToYen(userUSD);
                 case 8:
-                    f.dollarToPound(userUSD);
+                    runConversion.dollarToPound(userUSD);
                     break;
                 case 9:
-                    f.dollarToFranc(userUSD);
+                    runConversion.dollarToFranc(userUSD);
                     break;
                 case 10:
-                    f.dollarToKrona(userUSD);
+                    runConversion.dollarToKrona(userUSD);
                     break;
                 case 11:
-                    f.dollarToNZD(userUSD);
+                    runConversion.dollarToNZD(userUSD);
                     break;
                 case 12:
                     System.out.println("Goodbye!");
